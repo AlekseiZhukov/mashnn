@@ -1,0 +1,58 @@
+.block {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
+
+}
+.wrapper {
+    max-width: 84vw;
+    margin: 0 auto;
+    padding: 1vw;
+}
+.wrapperLink {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.link2 a,
+.link1 a {
+    font-size: 2vw;
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+.link2 a:hover,
+.link1 a:hover {
+    text-shadow: 1px 0 1px #fff, -1px 0 1px #fff, 0 1px 1px #fff, 0 -1px 1px #fff;
+    color: #B92C25;
+    transition: all .3s ease;
+}
+.link1::before {
+    content: "";
+    position: relative;
+    top: 8px;
+    left: -12px;
+    background: url(./tel.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 2.5vw;
+    height: 3vw;
+
+}
+.link2 a {
+    font-size: 2.3vw;
+}
+
+.link2::before {
+    content: "";
+    position: relative;
+    top: 15px;
+    left: -12px;
+    background: url(./mail.png) no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 4.5vw;
+    height: 3vw;
+}

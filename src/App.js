@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import './App.css';
+import {Redirect, Route} from 'react-router-dom';
+import MediaQuery from 'react-responsive'
+import MajorSlider from "./components/MajorSlider/MajorSlider";
+import MajorSliderMobile from "./components/MobileVersion/MajorSliderMobile/MajorSliderMobile";
+import TokarnayaObrabotka from "./components/TokarnayaObrabotka/TokarnayaObrabotka";
+import Footer from "./components/Footer/Footer";
+
+
+const App = (props) => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <MediaQuery maxWidth={499}>
+            <Redirect to={'/mobile'} />
+            <Route path='/mobile' exact component={MajorSliderMobile} />
+        </MediaQuery>
+        <MediaQuery minWidth={500}>
+            <Redirect to={'/'} />
+            <Route path='/' exact component={MajorSlider} />
+            <Route path='/tokarnayaobrabotka' exact component={TokarnayaObrabotka} />
+        </MediaQuery>
+        <Footer />
     </div>
   );
 }

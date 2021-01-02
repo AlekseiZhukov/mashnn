@@ -1,0 +1,73 @@
+.footer {
+    width: 100%;
+    height: auto;
+    background: #1a1a1a;
+}
+.wrapper {
+    max-width: 85vw;
+    margin: 0 auto;
+}
+.wrapperBlocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.block {
+    width: 28vw;
+    height: 20vw;
+
+}
+
+.emptyBlock {
+    position: relative;
+    width: 26vw;
+    height: 20vw;
+
+}
+.logoFooter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6vw;
+    height: auto;
+    z-index: 1;
+}
+.hand {
+    position: absolute;
+    border: white 2px solid;
+    top: 3vw;
+    left: 3vw;
+    width: 22vw;
+    height: auto;
+}
+
+
+.block ul {
+    padding: 0;
+    font-size: 1.7vw;
+    margin: 3vw 0 1vw 2vw;
+    text-align: start;
+    color: white;
+}
+.block ul li {
+    list-style-type: none;
+}
+button {
+    border: none;
+    border-radius: 0.5vw;
+    background: #B92C25;
+    width: 15vw;
+    height: 2vw;
+    font-size: 1.2vw;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.map {
+    border-radius: 1vw;
+    margin: 1vw;
+    width: 90%;
+    height: 90%;
+}
