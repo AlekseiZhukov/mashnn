@@ -1,0 +1,86 @@
+.block {
+    position: relative;
+    z-index: 2;
+}
+.blockImg {
+    position: relative;
+    cursor: pointer;
+
+}
+.img2,
+.img {
+    position: relative;
+    top: 3px;
+    right: -4px;
+    width: 23px;
+    height: auto;
+}
+.img2 {
+    position: relative;
+    top: 5px;
+    left: 200px;
+    width: 25px;
+    height: auto;
+}
+
+.showBlockNav,
+.blockNav {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    background: #B92C25;
+    text-align: left;
+    top: 0;
+}
+.blockNav {
+    position: fixed;
+    right: -300px;
+    transition: all 280ms linear;
+}
+.showBlockNav {
+    right: 0;
+    transition: all 280ms linear;
+}
+.navList {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #FFFFFF;
+    padding-left: 0;
+
+
+}
+.titleList {
+    display: block;
+    margin-bottom: 3px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.navList li {
+    list-style-type: none;
+
+}
+.selectedLink {
+    display: block;
+    background: rgba(113, 5, 0, .5);
+    font-style: italic;
+}
+.subNavList {
+    margin: 5px 0;
+    padding-left: 0;
+}
+.subNavList li {
+    padding: 7px 11px;
+    font-style: normal;
+    list-style-type: none;
+    cursor: pointer;
+}
+.subNavList li:hover {
+    background: rgba(113, 5, 0, .5)/*#282c34*/;
+    font-style: italic;
+}
+.subNavList li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+

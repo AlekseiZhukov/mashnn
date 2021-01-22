@@ -54,7 +54,7 @@
 .block ul li {
     list-style-type: none;
 }
-button {
+.buttonFooter {
     border: none;
     border-radius: 0.5vw;
     background: #B92C25;

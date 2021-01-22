@@ -1,0 +1,8 @@
+.wrapperGallery {
+
+    display: flex;
+    position: relative;
+    max-width: 85vw;
+    margin: 0 auto;
+    z-index: 100;
+}

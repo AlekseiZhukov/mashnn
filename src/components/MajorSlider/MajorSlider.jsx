@@ -8,11 +8,11 @@ import {NavLink} from "react-router-dom";
 
 const MajorSliderMobile = () => {
 
-
+//autoplay={4000}
     return (<>
 
         <Header />
-        <Slider autoplay={3000}>
+        <Slider  autoplay={4000} duration={1000}>
             {content.map((item, index) => (
                 <div
                     key={index}

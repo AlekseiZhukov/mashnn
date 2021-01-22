@@ -1,0 +1,87 @@
+.block {
+    position: relative;
+    z-index: 2;
+}
+.blockImg {
+    position: relative;
+    cursor: pointer;
+
+}
+.img2,
+.img {
+    position: relative;
+    top: .3vw;
+    width: 4vw;
+    height: auto;
+}
+.img2 {
+    position: relative;
+    top: 1vw;
+    left: 21vw;
+    width: 2.5vw;
+    height: auto;
+}
+
+.showBlockNav,
+.blockNav {
+    position: fixed;
+    width: 25vw;
+    height: 100vh;
+    background: #B92C25;
+    text-align: left;
+    top: 0;
+}
+.blockNav {
+    position: fixed;
+    right: -50vw;
+    transition: all 280ms linear;
+}
+.showBlockNav {
+
+    right: 0;
+    transition: all 280ms linear;
+}
+.navList {
+    margin-top: 2vw;
+    font-size: 1.4vw;
+    color: #FFFFFF;
+    padding-left: 0;
+
+
+}
+.titleList {
+    display: block;
+    margin-bottom: 1vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+.navList li {
+    list-style-type: none;
+
+}
+.selectedLink {
+    display: block;
+    background: rgba(113, 5, 0, .5);
+    font-style: italic;
+}
+.subNavList {
+    padding: 0;
+}
+.subNavList li {
+    height: 3vw;
+    font-style: normal;
+    list-style-type: none;
+    cursor: pointer;
+}
+.subNavList li:hover {
+    background: rgba(113, 5, 0, .5)/*#282c34*/;
+    font-style: italic;
+}
+.subNavList li a {
+    display: block;
+    padding: .5vw 1.7vw;
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+

@@ -2,9 +2,32 @@ import React from 'react';
 import style from './Footer.module.css'
 import logoFooter from '../../assets/imgs/logoFooter.svg'
 import hand from '../../assets/imgs/hand.jpg'
-const Footer = () => {
+import Requisites from "./Requisites/Requisites";
+
+class Footer extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            showRequisites: false
+        }
+    }
+
+    handleClickButton = () => {
+
+        this.setState ({
+            showRequisites: true
+        })
+    }
+    handleClickClose = () => {
+        this.setState ({
+            showRequisites: false
+        })
+    }
+
+    render() {
     return (
         <div className={style.footer}>
+            {this.state.showRequisites ? <Requisites handleClickClose={this.handleClickClose}/> : null}
             <div className={style.wrapper}>
                 <div className={style.wrapperBlocks}>
 
@@ -20,7 +43,7 @@ const Footer = () => {
                                 <li>email: info@mashnn.ru</li>
                                 <li>Тел. 8 (831) 212 - 98 - 68</li>
                             </ul>
-                            <button>показать реквизиты</button>
+                            <button className={style.buttonFooter} onClick={this.handleClickButton}>показать реквизиты</button>
                         </div>
 
                     <div className={style.block}>
@@ -32,6 +55,7 @@ const Footer = () => {
             </div>
         </div>
     )
+    }
 }
 
 export default Footer

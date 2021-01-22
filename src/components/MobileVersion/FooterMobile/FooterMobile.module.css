@@ -1,0 +1,94 @@
+.footerMobile {
+    width: 100%;
+    height: auto;
+    background: #1a1a1a;
+}
+.wrapperMobile {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.wrapperBlocksMobile {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.wrapperTwoBlocksMobile {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.blockMobile {
+    position: relative;
+    width: 145px;
+    height: 125px;
+
+}
+.blockMobile p {
+    margin: 0;
+    width: 200px;
+    position: relative;
+    left: -50%;
+    top: 0;
+    font-size: 13px;
+    color: #fff;
+
+}
+
+.blockMapMobile {
+    height: 250px;
+    margin: 30px 0 1px 0;
+}
+
+.logoFooterMobile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: auto;
+    z-index: 1;
+}
+.handMobile {
+    position: absolute;
+    border: white 1px solid;
+    top: 20px;
+    left: 20px;
+    width: 130px;
+    height: auto;
+}
+
+
+.blockMobile ul {
+    padding: 0;
+    font-size: 11px;
+    margin: 0 0 0 3px;
+    text-align: start;
+    color: white;
+}
+.blockMobile ul li {
+    list-style-type: none;
+}
+.buttonMobile {
+    position: relative;
+    top: 20px;
+    left: -50%;
+    border: none;
+    border-radius: 4px;
+    background: #B92C25;
+    width: 150px;
+    height: 20px;
+    font-size: 12px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.mapMobile {
+    border-radius: 10px;
+    margin: 0;
+    width: 90%;
+    height: 90%;
+}

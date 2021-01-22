@@ -1,0 +1,83 @@
+
+.block {
+    position: fixed;
+    top: -100%;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+
+}
+.moveBlock {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+    transition: all 1s ease-in-out;
+}
+.page {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    background: #FFFFFF;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 2vw;
+    overflow: auto;
+    padding: 1vw;
+
+}
+
+.wrapperLogo {
+    position: relative;
+}
+.closeButton {
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    font-size: 2vw;
+    width: 3vw;
+    height: 3vw;
+    background: #B92C25;
+    color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+}
+.logoSlider {
+
+    width: 17vw;
+    height: auto;
+}
+.blockRequisites {
+    padding: 1vw 1vw 1vw;
+    margin: 1vw auto;
+    max-width: 1200px;
+
+    box-shadow: 0.5vw 0.5vw 1vw #282c34;
+    text-align: left;
+}
+.blockRequisites h3 {
+    font-size: 24px;
+    color: #B92C25;
+    margin: .5vw;
+    text-align: center;
+}
+.blockRequisites p {
+    font-size: 18px;
+    margin: .5vw;
+    text-align: center;
+}
+.list {
+    width: 70%;
+    margin: 0  auto 2vw auto;
+}
+
+.list  li {
+    font-size: 14px;
+    list-style-type: none;
+}

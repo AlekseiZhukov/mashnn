@@ -1,0 +1,61 @@
+
+.block {
+    position: relative;
+    padding: 1vw;
+    margin: 0 auto;
+    max-width: 300px;
+}
+.backgroundLine {
+    position: absolute;
+    background: #B92C25;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+
+}
+.navWrapper {
+    position: absolute;
+    top: 0;
+    right: 2vw;
+}
+.link {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    height: 19px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+.imgLink {
+    width: 55px;
+    height: auto;
+}
+.wrapperBlock {
+
+    background-size: contain;
+}
+.wrapperBlock h2 {
+    position: relative;
+    margin: 5px;
+    font-size: 14px;
+    color: #B92C25;
+
+}
+.wrapperBlock p {
+    position: relative;
+    font-size: 12px;
+    text-indent: 25px;
+    text-align: justify;
+
+}
+
+
+
+
+
+
+
+
+

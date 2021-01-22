@@ -63,7 +63,7 @@
 }
 .sliderContent h1 {
     font-weight: 500;
-    margin: 6vw auto 3vw;
+    margin: 13vh auto 10vh;
     max-width: 85vw;
 	letter-spacing: 1px;
     color: #FFFFFF;
@@ -89,7 +89,7 @@
     font-size: 2.9vw;
     /*line-height: 1.5;*/
 	letter-spacing: 2px;
-    margin: 2vw auto 2vw;
+    margin: 5vh auto;
     max-width: 85vw;
 	text-transform: uppercase;
 	text-shadow: 4px 0 4px #000, -4px 0 4px #000, 0 4px 4px #000, 0 -4px 4px #000;
@@ -108,17 +108,27 @@
     opacity: 0;
 }
 .button {
-
-	border-radius: 2vw;
+	border-radius: 1.5vw;
 	margin: 0 auto;
 	width: 25vw;
-	height: 2.7vw;
+	height: 2.8vw;
 	background: #B92C25;
-	padding-top: .3vw;
+	padding-top: .4vw;
 	text-align: center;
 	transition: all .3s ease;
 	transform: translateY(20px);
 	opacity: 0;
+	background-image: linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%);
+	background-repeat: no-repeat;
+	background-size: 200% 100%, auto;
+	background-position: 200% 0, 0 0;
+
+}
+
+
+.button:hover {
+	transition: .5s linear;
+	background-position: -200% 0, 0 0;
 }
 
 .sliderContent section {
@@ -154,7 +164,7 @@
 }
 .sliderContent.animateIn,
 .sliderContent.animateOut {
-	transition: all 2s ease;
+	transition: all 1s ease;
 }
 .sliderContent.animateIn.previous,
 .sliderContent.animateIn.next {

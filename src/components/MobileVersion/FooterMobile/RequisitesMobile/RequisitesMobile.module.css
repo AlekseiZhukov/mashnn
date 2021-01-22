@@ -1,0 +1,83 @@
+
+.blockMobile {
+    position: fixed;
+    top: -100%;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+
+}
+.moveBlockMobile {
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 3;
+    transition: all 1s ease-in-out;
+}
+.pageMobile {
+    position: relative;
+    top: 10%;
+    left: 10%;
+    background: #FFFFFF;
+    width: 80vw;
+    height: 80vh;
+    border-radius: 2vw;
+    overflow: auto;
+    padding: 1vw;
+
+}
+
+.wrapperLogoMobile {
+    position: relative;
+}
+.closeButtonMobile {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    background: #B92C25;
+    color: #FFFFFF;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 5;
+}
+.logoSliderMobile {
+
+    width: 200px;
+    height: auto;
+}
+.blockRequisitesMobile {
+    padding: 1vw 1vw 1vw;
+    margin: 1vw auto;
+    max-width: 300px;
+
+    box-shadow: 0.5vw 0.5vw 1vw #282c34;
+    text-align: left;
+}
+.blockRequisitesMobile h3 {
+    font-size: 20px;
+    color: #B92C25;
+    margin: .5vw;
+    text-align: center;
+}
+.blockRequisitesMobile p {
+    font-size: 14px;
+    margin: .5vw;
+    text-align: center;
+}
+.listMobile {
+    /*width: 70%;*/
+    margin: 0  auto 2vw auto;
+}
+
+.listMobile  li {
+    font-size: 12px;
+    list-style-type: none;
+}

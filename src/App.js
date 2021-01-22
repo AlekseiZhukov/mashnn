@@ -1,26 +1,51 @@
-
+import React from 'react'
 import './App.css';
-import {Redirect, Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import MediaQuery from 'react-responsive'
-import MajorSlider from "./components/MajorSlider/MajorSlider";
+
 import MajorSliderMobile from "./components/MobileVersion/MajorSliderMobile/MajorSliderMobile";
-import TokarnayaObrabotka from "./components/TokarnayaObrabotka/TokarnayaObrabotka";
+
 import Footer from "./components/Footer/Footer";
+import FooterMobile from "./components/MobileVersion/FooterMobile/FooterMobile";
+
+import Operations from "./components/Operations/Operations";
+import OperationsMobile from "./components/MobileVersion/OperationsMobile/OperationsMobile";
+import {
+    dataFromBoringOperation,
+    dataFromMillingOperation,
+    dataFromTurningOperation,
+    dataFromGrindingOperation, dataFromGearCuttingOperation
+} from './components/Operations/contentOperation'
+import HomePage from "./components/HomePage/HomePage";
+import ExecutedWorks from "./components/executedWorks/executedWorks";
+
 
 
 const App = (props) => {
   return (
     <div className="App">
         <MediaQuery maxWidth={499}>
-            <Redirect to={'/mobile'} />
-            <Route path='/mobile' exact component={MajorSliderMobile} />
+
+            <Route path='/' exact component={MajorSliderMobile} />
+            <Route path='/turning'  render={ () => <OperationsMobile data={dataFromTurningOperation}/>} />
+            <Route path='/milling'  render={ () => <OperationsMobile data={dataFromMillingOperation}/>} />
+            <Route path='/boring'  render={ () => <OperationsMobile data={dataFromBoringOperation}/>} />
+            <Route path='/grinding'  render={ () => <OperationsMobile data={dataFromGrindingOperation}/>} />
+            <Route path='/gearCutting'  render={ () => <OperationsMobile data={dataFromGearCuttingOperation}/>} />
+            <FooterMobile />
         </MediaQuery>
         <MediaQuery minWidth={500}>
-            <Redirect to={'/'} />
-            <Route path='/' exact component={MajorSlider} />
-            <Route path='/tokarnayaobrabotka' exact component={TokarnayaObrabotka} />
+
+            <Route path='/' exact component={HomePage} />
+            <Route path='/turning'  render = {() => <Operations data={dataFromTurningOperation} />} />
+            <Route path='/milling'  render = {() => <Operations data={dataFromMillingOperation} />}/>
+            <Route path='/boring'  render = {() => <Operations data={dataFromBoringOperation} />}/>
+            <Route path='/grinding'  render = {() => <Operations data={dataFromGrindingOperation} />}/>
+            <Route path='/gearCutting'  render = {() => <Operations data={dataFromGearCuttingOperation} />}/>
+
+            <Footer />
         </MediaQuery>
-        <Footer />
+
     </div>
   );
 }

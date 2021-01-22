@@ -1,0 +1,42 @@
+.wrapperBlockSlider {
+	position: relative;
+	/*background: #282c34;*/
+
+}
+.img {
+	position: relative;
+	width: auto;
+	height: 30vw;
+	left: 50%;
+	top: 0;
+
+}
+.blockSlider {
+	padding: .5vw;
+	position: absolute;
+
+	width: 49%;
+
+	left: 0;
+	top: 0;
+}
+.blockSlider h3 {
+	text-align: left;
+	margin: 0;
+	font-size: 1.7vw;
+	color: #B92C25;
+	height: 6vw;
+	line-height: 2vw;
+}
+.subTitle {
+	font-weight: bold;
+}
+.blockSlider p {
+	font-size: 1.5vw;
+	text-align: left;
+	text-indent: 0;
+	color: #000;
+	line-height: 1.7vw;
+	margin: .7vw 0;
+	height: 3vw;
+}
