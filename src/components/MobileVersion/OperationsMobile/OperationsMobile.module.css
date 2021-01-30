@@ -21,7 +21,7 @@
 }
 .link {
     position: absolute;
-    left: 0;
+    left: -9px;
     top: 6px;
     height: 19px;
     cursor: pointer;
@@ -49,6 +49,45 @@
     text-indent: 25px;
     text-align: justify;
 
+}
+.optionsParamBlockWrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.textBlockWrapper {
+    position: relative;
+    text-align: left;
+}
+.textBlockWrapper h3 {
+    margin: 0;
+    font-size: 14px;
+    color: #B92C25;
+
+
+}
+.textBlockWrapper p {
+    font-size: 12px;
+    text-align: left;
+    text-indent: 0;
+    color: #000;
+    margin: .7vw 0;
+
+}
+.subTitle {
+    font-weight: bold;
+}
+.img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: 0;
+}
+.img2 {
+    position: absolute;
+    top: 0;
+    width: auto;
+    height: 30vw;
 }
 
 

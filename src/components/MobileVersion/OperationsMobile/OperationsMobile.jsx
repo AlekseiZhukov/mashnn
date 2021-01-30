@@ -23,16 +23,21 @@ const OperationsMobile = (props) => {
                 <p>{props.data.description} </p>
                 <p>{props.data.description2} </p>
             </div>
-            { props.data.dataFromSlider ? <SliderShow obj={props.data.dataFromSlider}/> : <div>
-                <h2>{props.data.subtitle}</h2>
-                <div>
-                    <p><span>{props.data.titleParam1}</span><span>{props.data.param1}</span></p>
-                    <p><span>{props.data.titleParam2}</span><span>{props.data.param2}</span></p>
-                    <p><span>{props.data.titleParam3}</span><span>{props.data.param3}</span></p>
+            { props.data.dataFromSlider ? <SliderShow obj={props.data.dataFromSlider}/>
+            : <div className={style.optionsParamBlockWrapper}>
+                    <div>
+                        <img className={style.img} src={props.data.image} alt={''} width={'300px'} height={'auto'} />
+                    </div>
+
+                <div className={style.textBlockWrapper}>
+                    <h3>{props.data.subtitle}</h3>
+                    <p><span className={style.subTitle}>{props.data.titleParam1}</span><span>{props.data.param1}</span></p>
+                    <p><span className={style.subTitle}>{props.data.titleParam2}</span><span>{props.data.param2}</span></p>
+                    <p><span className={style.subTitle}>{props.data.titleParam3}</span><span>{props.data.param3}</span></p>
+                    <p><span className={style.subTitle}>{props.data.titleParam4}</span><span>{props.data.param4}</span></p>
+                    <p><span className={style.subTitle}>{props.data.titleParam5}</span><span>{props.data.param5}</span></p>
                 </div>
-                <div>
-                    <img src={props.data.image} alt={''} width={'300px'} height={'auto'} />
-                </div>
+
             </div>}
 
         </div>

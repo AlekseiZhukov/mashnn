@@ -59,9 +59,9 @@ class SliderShowMobile extends React.Component {
                                 <h3>{item.title}</h3>
 								<p><span className={style.subTitle}>{item.titleParam1}</span><span>{item.param1}</span></p>
 								<p><span className={style.subTitle}>{item.titleParam2}</span><span>{item.param2}</span></p>
-								<p><span className={style.subTitle}>{item.titleParam3}</span><span>{item.param3}</span></p>
-								<p><span className={style.subTitle}>{item.titleParam4}</span><span>{item.param4}</span></p>
-								<p><span className={style.subTitle}>{item.titleParam5}</span><span>{item.param5}</span></p>
+								{item.titleParam3 ? <p><span className={style.subTitle}>{item.titleParam3}</span><span>{item.param3}</span></p> : null}
+								{item.titleParam3 ? <p><span className={style.subTitle}>{item.titleParam4}</span><span>{item.param4}</span></p> : null}
+								{item.titleParam3 ? <p><span className={style.subTitle}>{item.titleParam5}</span><span>{item.param5}</span></p> : null}
 
 							</div>
                         </div>

@@ -42,12 +42,12 @@ class Nav extends React.Component {
                                 <li><NavLink activeClassName={style.selectedLink} to={'/boring'}>Расточные работы</NavLink></li>
                                 <li><NavLink activeClassName={style.selectedLink} to={'/grinding'}>Шлифовка</NavLink></li>
                                 <li><NavLink activeClassName={style.selectedLink} to={'/gearCutting'}>Зубонарезные работы</NavLink></li>
-                                <li><NavLink activeClassName={style.selectedLink} to={'/heatTreatment'}>Термическая обработка</NavLink></li>
+                                <li><NavLink activeClassName={style.selectedLink} to={'/thermal'}>Термическая обработка</NavLink></li>
                                 <li><NavLink activeClassName={style.selectedLink} to={'/welding'}>Сварочные работы</NavLink></li>
                                 <li><NavLink activeClassName={style.selectedLink} to={'/plasmaLaserCutting'}>Плазменная и лазерная резка</NavLink></li>
                                 <li><NavLink activeClassName={style.selectedLink} to={'/electroerosiveCutting'}>Электроэрозионная резка</NavLink></li>
                                 <li><NavLink activeClassName={style.selectedLink} to={'/sheetBending'}>Листогибочные работы</NavLink></li>
-                                <li><NavLink activeClassName={style.selectedLink} to={'/examples'}> Примеры наших работы</NavLink></li>
+                                <li><NavLink activeClassName={style.selectedLink} to={'/photos'}> Примеры наших работы</NavLink></li>
                             </ul>
                         </li>
 

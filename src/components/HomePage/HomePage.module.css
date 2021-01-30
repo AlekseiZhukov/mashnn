@@ -1,6 +1,79 @@
+.section {
+
+    max-width: 85vw;
+    margin: 0 auto;
+}
+.subBlockWrapper {
+    position: relative;
+    margin-bottom: 5vw;
+
+
+}
+.imgWrapper {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.imgWrapper img {
+    width: auto;
+    height: 20vw;
+}
+.shadingDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(  rgba(255, 255, 255, 0), rgba(255, 255, 255, 1) 100%);
+    z-index: 1;
+}
+.textWrapper {
+    margin-bottom: 3vw;
+    max-width: 85vw;
+
+}
+.textWrapper h2,
+.section h2 {
+    color: #B92C25;
+    font-size: 2.9vw;
+    margin: 2vw 0 0;
+
+}
+.textWrapper p {
+    text-align: justify;
+    font-size: 1.7vw;
+    margin: 1vw 0 0;
+    line-height: 2.7vw;
+    text-indent: 1vw;
+}
+.bigLetter {
+    color: #B92C25;
+    font-size: 3vw;
+    line-height: 0;
+    font-weight: bold;
+}
+
 .galleryBlock {
     margin: 0 auto;
     max-width: 85vw;
     display: flex;
 
+}
+.linckTo {
+    position: absolute;
+    left: 36.5%;
+    top: 70%;
+    z-index: 2;
+    color: #282c34;
+    text-decoration: none;
+    font-size: 2vw;
+    font-weight: bold;
+    font-style: italic;
+    transition: all .3s ease;
+}
+.linckTo:hover {
+
+    color: #B92C25;
+    transition: all .3s ease;
 }

@@ -1,0 +1,45 @@
+.galleryBlockWrapper {
+    position: relative;
+    background: #4f4f4f;
+}
+.galleryBlock {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+
+}
+.link {
+    position: absolute;
+    left: 18px;
+    top: 6px;
+    cursor: pointer;
+    z-index: 1;
+    height: 19px;
+
+    /*border-bottom: #B92C25 1px solid;*/
+}
+.imgLink {
+    width: 55px;
+    height: auto;
+    filter: drop-shadow(1px 0px 1px white) drop-shadow(-1px 0px 1px white) drop-shadow(0px 1px 1px white) drop-shadow(0px -1px 1px white);
+}
+.backgroundLine {
+    position: absolute;
+    background: #B92C25;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+
+}
+.navWrapper {
+    position: absolute;
+    top: 0;
+    right: 2vw;
+}
+.galleryBlock h2 {
+    color: white;
+    font-size: 14px;
+    margin: 0 0 10px;
+    padding-top: 10px;
+}

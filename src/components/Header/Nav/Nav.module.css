@@ -61,21 +61,21 @@
 }
 .selectedLink {
     display: block;
-    background: rgba(113, 5, 0, .5);
-    font-style: italic;
+    background: rgb(79, 79, 79 );
+
 }
 .subNavList {
     padding: 0;
 }
 .subNavList li {
-    height: 3vw;
+    height: fit-content;
     font-style: normal;
     list-style-type: none;
     cursor: pointer;
 }
 .subNavList li:hover {
-    background: rgba(113, 5, 0, .5)/*#282c34*/;
-    font-style: italic;
+    background: rgb(79, 79, 79 );
+
 }
 .subNavList li a {
     display: block;
