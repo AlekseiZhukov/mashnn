@@ -1,0 +1,97 @@
+.blockBackground {
+    position: relative;
+    background: url(../../../assets/imgs/contactB.jpg) no-repeat center;
+    background-size: cover;
+    width: 100vw;
+}
+.blockBackgroundShadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+
+}
+.block {
+    position: relative;
+    padding: 1vw;
+    margin: 0 auto;
+    max-width: 300px;
+
+}
+.imgLink {
+    width: 55px;
+    height: auto;
+    filter: drop-shadow( 1px 0px 1px white ) drop-shadow( -1px 0px 1px white )
+    drop-shadow( 0px 1px 1px white ) drop-shadow( 0px -1px 1px white );
+}
+.link {
+    position: absolute;
+    left: -9px;
+    top: 6px;
+    height: 19px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+.backgroundLine {
+    position: absolute;
+    background: #B92C25;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    right: 0;
+
+}
+.navWrapper {
+    position: absolute;
+    top: 0;
+    right: 2vw;
+}
+
+.logoSlider {
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    filter: drop-shadow( 1px 0px 1px white ) drop-shadow( -1px 0px 1px white )
+    drop-shadow( 0px 1px 1px white ) drop-shadow( 0px -1px 1px white );
+}
+.ListWrapper {
+    width: 300px;
+    margin: 10px auto;
+    padding: 10px;
+    background: rgba(0,0,0, .5);
+    box-shadow: 3px 2px 15px 7px black;
+}
+.ListWrapper h2 {
+    margin-top: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+}
+.ListWrapper h3 {
+    color: white;
+    font-size: 13px;
+    font-style: normal;
+    margin:0 0 2vw 0 ;
+}
+.ListWrapper p {
+    text-align: start;
+     color: white;
+     font-size: 13px;
+ }
+
+.fileDownload {
+    padding: 0 .7vw;
+    border-radius: 1vw;
+    background: #B92C25;
+    cursor: pointer;
+
+}
+.fileDownload a {
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #B92C25;
+}

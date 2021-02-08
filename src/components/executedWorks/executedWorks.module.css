@@ -1,6 +1,7 @@
 .galleryBlockWrapper {
     position: relative;
     background: #4f4f4f;
+    padding-bottom: 2vw;
 }
 .galleryBlock {
     max-width: 85vw;

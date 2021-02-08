@@ -35,9 +35,11 @@ class Nav extends React.Component {
                         <img className={style.img2} alt='' src={navRevers} />
                     </div>
                     <ul className={style.navList}>
-                        <li> <span className={style.titleList}>услуги:</span>
+
+                        <li> {/*<span className={style.titleList}>услуги:</span>*/}
                             <ul className={style.subNavList}>
-                                <li> <NavLink activeClassName={style.selectedLink} to={'/turning'}>Токарная обработка</NavLink></li>
+                                <li><NavLink activeClassName={style.selectedLink} exact to={'/'}>Главная</NavLink></li>
+                                <li><NavLink activeClassName={style.selectedLink} to={'/turning'}>Токарная обработка</NavLink></li>
                                 <li><NavLink activeClassName={style.selectedLink} to={'/milling'}>Фрезерная обработка</NavLink></li>
                                 <li><NavLink activeClassName={style.selectedLink} to={'/boring'}>Расточные работы</NavLink></li>
                                 <li><NavLink activeClassName={style.selectedLink} to={'/grinding'}>Шлифовка</NavLink></li>
@@ -48,6 +50,7 @@ class Nav extends React.Component {
                                 <li><NavLink activeClassName={style.selectedLink} to={'/electroerosiveCutting'}>Электроэрозионная резка</NavLink></li>
                                 <li><NavLink activeClassName={style.selectedLink} to={'/sheetBending'}>Листогибочные работы</NavLink></li>
                                 <li><NavLink activeClassName={style.selectedLink} to={'/photos'}> Примеры наших работы</NavLink></li>
+                                <li><NavLink activeClassName={style.selectedLink} to={'/contacts'}> Контакты</NavLink></li>
                             </ul>
                         </li>
 

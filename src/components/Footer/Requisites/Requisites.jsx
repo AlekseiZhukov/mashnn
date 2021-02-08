@@ -20,7 +20,7 @@ class Requisites extends React.Component {
 
     render () {
     return (
-        <div className={!this.state.show ? style.block: style.moveBlock }>
+        <div className={!this.state.show ? style.block : style.moveBlock }>
 
             <div className={style.page}>
                 <div className={style.closeButton} onClick={this.props.handleClickClose}>X</div>

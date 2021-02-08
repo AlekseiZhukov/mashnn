@@ -20,7 +20,7 @@ function SamplePrevArrow(props) {
 		<div
 			className={className}
 			style={{ display: "block", top: "230px", left: "-7px",
-				"z-index": "1" }}
+				"zIndex": "1" }}
 			onClick={onClick}
 		/>
 	);

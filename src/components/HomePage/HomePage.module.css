@@ -1,5 +1,4 @@
 .section {
-
     max-width: 85vw;
     margin: 0 auto;
 }
@@ -9,6 +8,7 @@
 
 
 }
+
 .imgWrapper {
     position: relative;
     display: flex;
@@ -29,23 +29,45 @@
     z-index: 1;
 }
 .textWrapper {
+    position: relative;
     margin-bottom: 3vw;
     max-width: 85vw;
 
 }
+.backgroundBlock {
+    position: absolute;
+    top: 4vw;
+    left: -7vw;
+    width: 113vw;
+    height: 38%;
+    background:  linear-gradient(120deg, rgba(185, 44, 37, .2) 49%, rgba(255, 255, 255, .8) 30%)/* repeat scroll 0 0*/;
+    z-index: 0;
+}
+.backgroundBlock2 {
+    position: absolute;
+    bottom: -1vw;
+    right: -8vw;
+    width: 113vw;
+    height: 38%;
+    background:  linear-gradient(120deg, rgba(255, 255, 255, .1) 49%, rgba(0, 0, 0, .1) 30%)/* repeat scroll 0 0*/;
+    z-index: 0;
+}
 .textWrapper h2,
 .section h2 {
+    position: relative;
     color: #B92C25;
     font-size: 2.9vw;
     margin: 2vw 0 0;
 
 }
 .textWrapper p {
+    position: relative;
     text-align: justify;
     font-size: 1.7vw;
     margin: 1vw 0 0;
     line-height: 2.7vw;
     text-indent: 1vw;
+    z-index: 1;
 }
 .bigLetter {
     color: #B92C25;

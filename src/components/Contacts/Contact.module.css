@@ -1,0 +1,99 @@
+.blockBackground {
+    position: relative;
+    background: url(../../assets/imgs/contactB.jpg) no-repeat center;
+    background-size: cover;
+    width: 100vw;
+}
+.blockBackgroundShadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+
+}
+.block {
+    position: relative;
+    padding: 1vw;
+    margin: 0 auto;
+    max-width: 85vw;
+
+}
+.imgLink {
+    width: 9vw;
+    height: auto;
+    filter: drop-shadow( 1px 0px 1px white ) drop-shadow( -1px 0px 1px white )
+    drop-shadow( 0px 1px 1px white ) drop-shadow( 0px -1px 1px white );
+}
+.link {
+    position: absolute;
+    left: 0;
+    top: 4%;
+    cursor: pointer;
+    z-index: 1;
+    height: 1.7vw;
+
+}
+.backgroundLine {
+    position: absolute;
+    background: #B92C25;
+    width: 5vw;
+    height: 4.3vw;
+    top: -1vw;
+    right: 1.5vw;
+
+}
+.navWrapper {
+    position: absolute;
+    top: 0;
+    right: 2vw;
+}
+
+.logoSlider {
+    margin-top: 3vw;
+    width: 30vw;
+    height: auto;
+    filter: drop-shadow( 2px 0px 2px white ) drop-shadow( -2px 0px 2px white )
+    drop-shadow( 0px 2px 2px white ) drop-shadow( 0px -2px 2px white );
+}
+.ListWrapper {
+    width: 70vw;
+    margin: 2vw auto;
+    padding: 3vw;
+    background: rgba(0,0,0, .5);
+    box-shadow: 3px 2px 15px 7px black;
+}
+.ListWrapper h2 {
+    margin-top: 0;
+    font-size: 2.9vw;
+    text-transform: uppercase;
+    color: white;
+}
+.ListWrapper h3 {
+    color: white;
+    font-size: 2.5vw;
+    font-style: normal;
+    margin:0 0 2vw 0 ;
+}
+.ListWrapper p {
+    text-align: start;
+     color: white;
+     font-size: 1.7vw;
+ }
+.ListWrapper p strong {
+   font-size: 1.9vw;
+}
+.fileDownload {
+    padding: 0 .7vw;
+    border-radius: 1vw;
+    background: #B92C25;
+    cursor: pointer;
+
+}
+.fileDownload a {
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #B92C25;
+}

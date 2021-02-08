@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+
+        <loc>http://mashnn.ru/</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>1</priority>
+
+    </url>
+    <url>
+        <loc>http://mashnn.ru/turning</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://mashnn.ru/milling</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://mashnn.ru/boring</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://mashnn.ru/grinding</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://mashnn.ru/gearCutting</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://mashnn.ru/thermal</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://mashnn.ru/welding</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://mashnn.ru/plasmaLaserCutting</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://mashnn.ru/electroerosiveCutting</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://mashnn.ru/sheetBending</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>http://mashnn.ru/photos</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>http://mashnn.ru/contacts</loc>
+        <lastmod>2021-02-07</lastmod>
+        <priority>0.1</priority>
+    </url>
+
+</urlset>

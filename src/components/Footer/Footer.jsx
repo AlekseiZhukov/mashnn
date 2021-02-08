@@ -4,6 +4,7 @@ import logoFooter from '../../assets/imgs/logoFooter.svg'
 import hand from '../../assets/imgs/hand.jpg'
 import Requisites from "./Requisites/Requisites";
 
+
 class Footer extends React.Component {
     constructor(props) {
         super(props);
@@ -53,6 +54,7 @@ class Footer extends React.Component {
 
                 </div>
             </div>
+
         </div>
     )
     }

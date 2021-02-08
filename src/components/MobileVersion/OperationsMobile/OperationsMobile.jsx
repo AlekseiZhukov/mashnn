@@ -3,14 +3,15 @@ import style from './OperationsMobile.module.css'
 import SliderShow from "../SliderShowMobile/SliderShowMobile";
 
 import backArrow from '../../../assets/imgs/onHomeArrow.svg'
-
+import Fade from 'react-reveal/Fade';
 import {NavLink} from "react-router-dom";
 import NavMobile from "../NavMobile/NavMobile";
+import ContactUsMobile from "../FormMobile/FormMobile";
 
 
 const OperationsMobile = (props) => {
          
-    return (
+    return (<>
 
         <div className={style.block}>
             <NavLink className={style.link} to={'/'}> <img  className={style.imgLink} src={backArrow} alt={''}/> </NavLink>
@@ -18,13 +19,15 @@ const OperationsMobile = (props) => {
             <div className={style.navWrapper}>
                 <NavMobile />
             </div>
+            <Fade>
             <div className={style.wrapperBlock} style={{ background: `url('${props.data.backgroundImage}') no-repeat center center`}}>
                 <h2>{props.data.title}</h2>
                 <p>{props.data.description} </p>
                 <p>{props.data.description2} </p>
             </div>
-            { props.data.dataFromSlider ? <SliderShow obj={props.data.dataFromSlider}/>
-            : <div className={style.optionsParamBlockWrapper}>
+            </Fade>
+            { props.data.dataFromSlider ? <Fade><SliderShow obj={props.data.dataFromSlider}/></Fade>
+            : <Fade><div className={style.optionsParamBlockWrapper}>
                     <div>
                         <img className={style.img} src={props.data.image} alt={''} width={'300px'} height={'auto'} />
                     </div>
@@ -38,9 +41,11 @@ const OperationsMobile = (props) => {
                     <p><span className={style.subTitle}>{props.data.titleParam5}</span><span>{props.data.param5}</span></p>
                 </div>
 
-            </div>}
+                </div></Fade>}
 
         </div>
+            <Fade ><ContactUsMobile /></Fade>
+        </>
     )
 
 }

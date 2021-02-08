@@ -5,7 +5,7 @@
 .blockImg {
     position: relative;
     cursor: pointer;
-
+    display: inline-block;
 }
 .img2,
 .img {
@@ -13,6 +13,7 @@
     top: .3vw;
     width: 4vw;
     height: auto;
+
 }
 .img2 {
     position: relative;
@@ -54,6 +55,11 @@
     margin-bottom: 1vw;
     text-align: center;
     text-transform: uppercase;
+}
+.homeLink {
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 .navList li {
     list-style-type: none;

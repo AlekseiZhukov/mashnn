@@ -14,12 +14,16 @@ import {
     dataFromGearCuttingOperation,
     dataFromThermalOperation,
     dataFromWeldingOperation,
-    dataFromPlasmaLaserCuttingOperation, dataFromElectroerosiveCuttingOperation, dataFromSheetBendingOperation
+    dataFromPlasmaLaserCuttingOperation,
+    dataFromElectroerosiveCuttingOperation,
+    dataFromSheetBendingOperation
 } from './components/Operations/contentOperation'
 import HomePage from "./components/HomePage/HomePage";
 import ExecutedWorks from "./components/executedWorks/executedWorks";
 import ExecutedWorksMobile from "./components/MobileVersion/executedWorksMobile/executedWorksMobile";
 import HomePageMobile from "./components/MobileVersion/HomePageMobile/HomePageMobile";
+import Contact from "./components/Contacts/Contact";
+import ContactMobile from "./components/MobileVersion/ContactsMobile/ContactMobile";
 
 
 
@@ -40,6 +44,7 @@ const App = () => {
             <Route path='/electroerosiveCutting'  render = {() => <OperationsMobile data={dataFromElectroerosiveCuttingOperation} />}/>
             <Route path='/sheetBending'  render = {() => <OperationsMobile data={dataFromSheetBendingOperation} />}/>
             <Route path='/photos'  render = {() => <ExecutedWorksMobile />}/>
+            <Route path='/contacts'  render = {() => <ContactMobile />}/>
             <FooterMobile />
         </MediaQuery>
         <MediaQuery minWidth={500}>
@@ -56,6 +61,7 @@ const App = () => {
             <Route path='/electroerosiveCutting'  render = {() => <Operations data={dataFromElectroerosiveCuttingOperation} />}/>
             <Route path='/sheetBending'  render = {() => <Operations data={dataFromSheetBendingOperation} />}/>
             <Route path='/photos'  render = {() => <ExecutedWorks />}/>
+            <Route path='/contacts'  render = {() => <Contact />}/>
 
             <Footer />
         </MediaQuery>
