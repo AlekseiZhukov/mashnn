@@ -81,7 +81,7 @@ export const  content =  [
         description: "термическая обработка",
         button: "узнать подробности",
         logo: logo,
-        path: "/heatTreatment",
+        path: "/thermal",
         image: slide7,
         imageM: slide7M
     },

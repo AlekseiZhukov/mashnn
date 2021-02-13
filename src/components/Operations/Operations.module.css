@@ -33,7 +33,7 @@
     height: auto;
 }
 .wrapperBlockFrez {
-    /*background: url(../../assets/imgs/frezer.png) no-repeat center;*/
+
     background-size: contain;
 }
 .wrapperBlock h2 {
@@ -46,9 +46,9 @@
 .wrapperBlock p {
     position: relative;
     font-size: 1.7vw;
-    text-indent: 7%;
+    text-indent: 3vw;
     text-align: justify;
-
+    line-height: 2.7vw;
 }
 .optionsParamBlockWrapper {
     display: flex;

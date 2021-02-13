@@ -162,7 +162,7 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: '\2022';
     text-align: center;
 
     opacity: .7;
@@ -247,7 +247,7 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: '\2022';
     text-align: center;
 
     opacity: .7;

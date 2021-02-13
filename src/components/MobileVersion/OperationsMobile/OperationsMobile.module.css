@@ -9,7 +9,7 @@
     position: absolute;
     background: #B92C25;
     width: 30px;
-    height: 30px;
+    height: 27px;
     top: 0;
     right: 0;
 
@@ -46,7 +46,7 @@
 .wrapperBlock p {
     position: relative;
     font-size: 12px;
-    text-indent: 25px;
+    text-indent: 20px;
     text-align: justify;
 
 }
