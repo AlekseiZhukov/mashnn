@@ -48,7 +48,8 @@ const HomePage = () => {
         </div>
 
         <Fade>
-            <ContactUs /></Fade >
+            <ContactUs />
+        </Fade >
         </>
     )
 }

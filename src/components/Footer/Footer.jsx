@@ -40,7 +40,7 @@ class Footer extends React.Component {
                         <div className={style.block}>
                             <ul>
                                 <li>ООО «Машиностроение НН»</li>
-                                <li>Адрес: г. Нижний Новгород, пос. Черепичный, д. 14 «В», офис 3</li>
+                                <li>Адрес: г. Н.Новгород, д. Ближнеконстантиново, ул. Полевая, д. 8, офис 203</li>
                                 <li>email: info@mashnn.ru</li>
                                 <li>Тел. 8 (831) 212 - 98 - 68</li>
                             </ul>
@@ -48,9 +48,11 @@ class Footer extends React.Component {
                         </div>
 
                     <div className={style.block}>
+
                         <iframe className={style.map} title={'map'}
                             src="https://yandex.ru/map-widget/v1/?um=constructor%3A504eb2da70bad389482e2e04107d4199c2bbb13d85fac188fd9ddb7059980e24&amp;source=constructor"
-                            width="665" height="400" frameBorder="0"></iframe></div>
+                            width="665" height="400" frameBorder="0"></iframe>
+                    </div>
 
                 </div>
             </div>

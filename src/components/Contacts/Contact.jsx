@@ -24,7 +24,7 @@ const Contact = () => {
             <div className={style.ListWrapper} itemScope itemType="http://schema.org/Organization">
                 <h2 >Контакты</h2>
                 <h3 itemProp="name">ООО «Машиностроение НН»</h3>
-                <p itemProp="address" itemScope itemType="http://schema.org/PostalAddress"><strong>Адрес:</strong> <span itemProp="addressLocality">г. Нижний Новгород</span>, пос. Черепичный, д. 14 «В», офис 3</p>
+                <p itemProp="address" itemScope itemType="http://schema.org/PostalAddress"><strong>Адрес:</strong> 603152, <span itemProp="addressLocality">г. Нижний Новгород</span>, д. Ближнеконстантиново, д. 8, офис 203</p>
                 <p><strong>email:</strong> <span itemProp="email">info@mashnn.ru</span></p>
                 <p><strong>Тел.:</strong> <span itemProp="telephone">8 (831) 212 - 98 - 68</span></p>
                 <p>Вы можете <span className={style.fileDownload}><a  href={filePdf} download={true}>скачать</a></span> реквизиты</p>
