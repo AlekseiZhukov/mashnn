@@ -3,12 +3,13 @@ import style from './FooterMobile.module.css'
 import logoFooter from '../../../assets/imgs/logoFooter.svg'
 import hand from '../../../assets/imgs/hand.jpg'
 import RequisitesMobile from "./RequisitesMobile/RequisitesMobile";
-
+import {dataAddress} from "../../../assets/dataAddress.js"
 class FooterMobile extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showRequisites: false
+            showRequisites: false,
+            dataAddress:dataAddress
         }
     }
 
@@ -24,6 +25,7 @@ class FooterMobile extends React.Component {
     }
 
     render() {
+        const {address, email, name, phone} = this.state.dataAddress
     return (
         <div className={style.footerMobile}>
             {this.state.showRequisites ? <RequisitesMobile handleClickClose={this.handleClickClose}/> : null}
@@ -37,12 +39,11 @@ class FooterMobile extends React.Component {
                         </div>
 
                         <div className={style.blockMobile}>
-                            <p>ООО «Машиностроение НН»</p>
+                            <p>{name}</p>
                             <ul>
-
-                                <li>Адрес: г. Нижний Новгород, пос. Черепичный, д. 14 «В», офис 3</li>
-                                <li>email: info@mashnn.ru</li>
-                                <li>Тел. 8 (831) 212 - 98 - 68</li>
+                                <li>Адрес: {address.city}, <br />{address.village},<br/>{address.street} д. {address.house}, офис {address.office}</li>
+                                <li>email: {email}</li>
+                                <li>Тел. {phone}</li>
                             </ul>
                             <button className={style.buttonMobile} onClick={this.handleClickButton}>показать реквизиты</button>
                         </div>

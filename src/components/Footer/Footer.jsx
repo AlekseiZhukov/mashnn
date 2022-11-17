@@ -3,15 +3,17 @@ import style from './Footer.module.css'
 import logoFooter from '../../assets/imgs/logoFooter.svg'
 import hand from '../../assets/imgs/hand.jpg'
 import Requisites from "./Requisites/Requisites";
-
+import {dataAddress} from "../../assets/dataAddress.js"
 
 class Footer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showRequisites: false
+            showRequisites: false,
+            dataAddress: dataAddress
         }
     }
+
 
     handleClickButton = () => {
 
@@ -26,6 +28,7 @@ class Footer extends React.Component {
     }
 
     render() {
+        const {address, email, name, phone} = this.state.dataAddress
     return (
         <div className={style.footer}>
             {this.state.showRequisites ? <Requisites handleClickClose={this.handleClickClose}/> : null}
@@ -39,10 +42,10 @@ class Footer extends React.Component {
 
                         <div className={style.block}>
                             <ul>
-                                <li>ООО «Машиностроение НН»</li>
-                                <li>Адрес: г. Н.Новгород, д. Ближнеконстантиново, ул. Полевая, д. 8, офис 203</li>
-                                <li>email: info@mashnn.ru</li>
-                                <li>Тел. 8 (831) 212 - 98 - 68</li>
+                                <li>{name}</li>
+                                <li>Адрес: {address.city}, <br /> {address.village},<br /> {address.street}, д. {address.house}, офис {address.office}</li>
+                                <li>email: {email}</li>
+                                <li>Тел. {phone}</li>
                             </ul>
                             <button className={style.buttonFooter} onClick={this.handleClickButton}>показать реквизиты</button>
                         </div>

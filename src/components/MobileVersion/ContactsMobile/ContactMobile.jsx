@@ -10,10 +10,10 @@ import filePdf from '../../../assets/Реквизиты-ООО-МАШИНОСТ�
 const ContactMobile = () => {
 
     return ( <div className={style.blockBackground} >
-            <div className={style.blockBackgroundShadow}></div>
+            <div className={style.blockBackgroundShadow} />
         <div className={style.block} >
             <NavLink className={style.link} to={'/'}> <img  className={style.imgLink} src={backArrow} alt={''}/> </NavLink>
-            <div className={style.backgroundLine}></div>
+            <div className={style.backgroundLine}/>
             <div className={style.navWrapper}>
                 <NavMobile />
             </div>
