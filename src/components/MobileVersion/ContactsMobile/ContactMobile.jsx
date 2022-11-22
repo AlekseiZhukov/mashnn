@@ -6,9 +6,9 @@ import NavMobile from "../NavMobile/NavMobile";
 import logo from '../../../assets/imgs/logo.svg';
 import Roll from 'react-reveal/Roll';
 import filePdf from '../../../assets/Реквизиты-ООО-МАШИНОСТРОЕНИЕ-НН-1.pdf';
-
+import {dataAddress} from '../../../assets/dataAddress'
 const ContactMobile = () => {
-
+    const {address, email, name, phone} = dataAddress
     return ( <div className={style.blockBackground} >
             <div className={style.blockBackgroundShadow} />
         <div className={style.block} >
@@ -23,10 +23,10 @@ const ContactMobile = () => {
             <Roll left>
             <div className={style.ListWrapper} itemScope itemType="http://schema.org/Organization">
                 <h2>Контакты</h2>
-                <h3 itemProp="name">ООО «Машиностроение НН»</h3>
-                <p itemProp="address" itemScope itemType="http://schema.org/PostalAddress"><strong>Адрес:</strong> <span itemProp="addressLocality">г. Нижний Новгород</span>, пос. Черепичный, д. 14 «В», офис 3</p>
-                <p><strong>email:</strong> <span itemProp="email">info@mashnn.ru</span></p>
-                <p><strong>Тел.:</strong> <span itemProp="telephone">8 (831) 212 - 98 - 68</span></p>
+                <h3 itemProp="name">{name}</h3>
+                <p itemProp="address" itemScope itemType="http://schema.org/PostalAddress"><strong>Адрес:</strong> <span itemProp="addressLocality">{address.city}</span>,<br/> {address.village},<br/> {address.street}, д. {address.house}, офис {address.office}</p>
+                <p><strong>email:</strong> <span itemProp="email">{email}</span></p>
+                <p><strong>Тел.:</strong> <span itemProp="telephone">{phone}</span></p>
                 <p>Вы можете <span className={style.fileDownload}><a  href={filePdf} download={true}>скачать</a></span> реквизиты</p>
             </div></Roll>
         </div>
