@@ -38,7 +38,7 @@ class Header extends React.Component {
         <div className={!this.state.move ? style.block : style.blockMove}>
             <div className={style.wrapper}>
                 <div className={style.wrapperLink}>
-                    <div className={style.link1}><a href="tel:+78312129868">+7 (831) 212 98 68</a></div>
+                    <div className={style.link1}><a href="tel:+78312672800">+7 (831) 267 28 00</a></div>
                     <div className={style.link2}><a href="mailto:info@mashnn.ru">info@mashnn.ru</a></div>
                     <Nav />
                 </div>

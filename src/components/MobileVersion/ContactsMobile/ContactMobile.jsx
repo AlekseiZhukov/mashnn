@@ -8,7 +8,7 @@ import Roll from 'react-reveal/Roll';
 import filePdf from '../../../assets/Реквизиты-ООО-МАШИНОСТРОЕНИЕ-НН-1.pdf';
 import {dataAddress} from '../../../assets/dataAddress'
 const ContactMobile = () => {
-    const {address, email, name, phone} = dataAddress
+    const {address, email, name, phone, multiChanelPhone} = dataAddress
     return ( <div className={style.blockBackground} >
             <div className={style.blockBackgroundShadow} />
         <div className={style.block} >
@@ -24,10 +24,11 @@ const ContactMobile = () => {
             <div className={style.ListWrapper} itemScope itemType="http://schema.org/Organization">
                 <h2>Контакты</h2>
                 <h3 itemProp="name">{name}</h3>
-                <p itemProp="address" itemScope itemType="http://schema.org/PostalAddress"><strong>Адрес:</strong> <span itemProp="addressLocality">{address.city}</span>,<br/> {address.village},<br/> {address.street}, д. {address.house}, офис {address.office}</p>
+                <p itemProp="address" itemScope itemType="http://schema.org/PostalAddress"><strong>Адрес:</strong> <span itemProp="addressLocality">{address.city}</span>,<br/> {address.street}, д. {address.house}, офис {address.office}</p>
                 <p><strong>email:</strong> <span itemProp="email">{email}</span></p>
-                <p><strong>Тел.:</strong> <span itemProp="telephone">{phone}</span></p>
-                <p>Вы можете <span className={style.fileDownload}><a  href={filePdf} download={true}>скачать</a></span> реквизиты</p>
+                <p><strong>Тел.:</strong> <span itemProp="telephone">{multiChanelPhone},</span></p>
+                <p>Тел.:<span itemProp="telephone">{phone}</span></p>
+                <p><strong>Тел.:</strong> <span className={style.fileDownload}><a  href={filePdf} download={true}>скачать</a></span> реквизиты</p>
             </div></Roll>
         </div>
         </div>

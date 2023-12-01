@@ -28,7 +28,7 @@ class Footer extends React.Component {
     }
 
     render() {
-        const {address, email, name, phone} = this.state.dataAddress
+        const {address, email, name, phone, multiChanelPhone} = this.state.dataAddress
     return (
         <div className={style.footer}>
             {this.state.showRequisites ? <Requisites handleClickClose={this.handleClickClose}/> : null}
@@ -43,15 +43,15 @@ class Footer extends React.Component {
                         <div className={style.block}>
                             <ul>
                                 <li>{name}</li>
-                                <li>Адрес: {address.city}, <br /> {address.village},<br /> {address.street}, д. {address.house}, офис {address.office}</li>
+                                <li>Адрес: {address.city}, <br /> {address.street}, д. {address.house}, пом. {address.office}</li>
                                 <li>email: {email}</li>
+                                <li>Тел. {multiChanelPhone },</li>
                                 <li>Тел. {phone}</li>
                             </ul>
                             <button className={style.buttonFooter} onClick={this.handleClickButton}>показать реквизиты</button>
                         </div>
 
                     <div className={style.block}>
-
                         <iframe className={style.map} title={'map'}
                             src="https://yandex.ru/map-widget/v1/?um=constructor%3A504eb2da70bad389482e2e04107d4199c2bbb13d85fac188fd9ddb7059980e24&amp;source=constructor"
                             width="665" height="400" frameBorder="0"></iframe>
