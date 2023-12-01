@@ -5,9 +5,6 @@ import slideTokar1 from '../../assets/imgs/tokarStan.jpg'
 import slideTokar2 from '../../assets/imgs/verticalTurningLathe.jpg'
 import slideTokar3 from '../../assets/imgs/cncLathe.jpg'
 
-//import backgroundImageTokar from '../../assets/imgs/tokar.png'
-//import backgroundImageMilling from '../../assets/imgs/frezer.png'
-
 import slideBoring1 from '../../assets/imgs/Boring1.jpg'
 import slideBoring2 from '../../assets/imgs/Boring2.jpg'
 
